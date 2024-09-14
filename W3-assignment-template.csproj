@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Colorful.Console" Version="1.2.15" />
     <PackageReference Include="xunit" Version="2.9.0" />
   </ItemGroup>
 

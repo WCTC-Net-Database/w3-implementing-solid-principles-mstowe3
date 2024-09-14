@@ -1,4 +1,6 @@
-﻿namespace CharacterConsole;
+﻿using System.Drawing;
+
+namespace CharacterConsole;
 
 class Program
 {
@@ -26,13 +28,13 @@ class ConsoleInput : IInput
 
 class ConsoleOutput : IOutput
 {
-    public void WriteLine(string message)
+    public void WriteLine(string message, Color color)
     {
-        Console.WriteLine(message);
+        Console.WriteLine(message, Color.AliceBlue);
     }
 
-    public void Write(string message)
+    public void Write(string message, Color color)
     {
-        Console.Write(message);
+        Console.Write(message, Color.AliceBlue);
     }
 }
